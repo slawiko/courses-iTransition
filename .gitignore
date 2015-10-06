@@ -297,3 +297,8 @@ target/
 *.pyc
 __pycache__/
 local_settings.py
+
+### XamarinStudio ###
+bin/
+obj/
+*.userprefs
