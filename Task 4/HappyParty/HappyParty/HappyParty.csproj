@@ -4,17 +4,17 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <ProjectGuid>{E602C718-BA4A-4FB9-B78B-CD642D12DB0F}</ProjectGuid>
+    <ProjectGuid>{8FC1A3C9-0A94-40BB-BCB8-7D0E7CFB6C1C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>HappyParty</RootNamespace>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <AndroidResgenClass>Resource</AndroidResgenClass>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AndroidApplication>True</AndroidApplication>
     <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
     <AssemblyName>HappyParty</AssemblyName>
-    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <TargetFrameworkVersion>v4.4</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -61,6 +61,22 @@
     <AndroidResource Include="Resources\drawable-xhdpi\Icon.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\Icon.png" />
     <AndroidResource Include="Resources\drawable-xxxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\whisky.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\.DS_Store" />
+    <AndroidResource Include="Resources\drawable-hdpi\beer.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\cola.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\whisky.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\beer.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\cola.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\whisky.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\beer.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\cola.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\whisky.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\beer.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\cola.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\whisky.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\beer.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\cola.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
 </Project>

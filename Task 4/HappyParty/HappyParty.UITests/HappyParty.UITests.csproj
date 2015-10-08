@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8C4EFDFF-03A9-47E5-BC4F-889C890E4AB0}</ProjectGuid>
+    <ProjectGuid>{C2C7C866-1AC3-48D9-B638-503D18FFDEF3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>HappyParty.UITests</RootNamespace>
     <AssemblyName>HappyParty.UITests</AssemblyName>
@@ -38,7 +38,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\HappyParty\HappyParty.csproj">
-      <Project>{E602C718-BA4A-4FB9-B78B-CD642D12DB0F}</Project>
+      <Project>{8FC1A3C9-0A94-40BB-BCB8-7D0E7CFB6C1C}</Project>
       <Name>HappyParty</Name>
       <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
       <Private>False</Private>

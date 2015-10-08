@@ -45,7 +45,16 @@ namespace HappyParty
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int Icon = 2130837504;
+			public const int beer = 2130837504;
+			
+			// aapt resource value: 0x7f020001
+			public const int cola = 2130837505;
+			
+			// aapt resource value: 0x7f020002
+			public const int Icon = 2130837506;
+			
+			// aapt resource value: 0x7f020003
+			public const int whisky = 2130837507;
 			
 			static Drawable()
 			{
@@ -61,7 +70,19 @@ namespace HappyParty
 		{
 			
 			// aapt resource value: 0x7f050000
-			public const int myButton = 2131034112;
+			public const int actionBox = 2131034112;
+			
+			// aapt resource value: 0x7f050002
+			public const int beer = 2131034114;
+			
+			// aapt resource value: 0x7f050003
+			public const int cola = 2131034115;
+			
+			// aapt resource value: 0x7f050001
+			public const int imageBox = 2131034113;
+			
+			// aapt resource value: 0x7f050004
+			public const int whisky = 2131034116;
 			
 			static Id()
 			{
@@ -92,11 +113,8 @@ namespace HappyParty
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f040001
-			public const int app_name = 2130968577;
-			
 			// aapt resource value: 0x7f040000
-			public const int hello = 2130968576;
+			public const int app_name = 2130968576;
 			
 			static String()
 			{
