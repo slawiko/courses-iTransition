@@ -4,37 +4,41 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:minWidth="25px"
-    android:minHeight="25px">
-    <LinearLayout
-        android:orientation="vertical"
+    android:minHeight="25px"
+    android:background="@drawable/background">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="416.3dp"
+        android:id="@+id/dropView" />
+    <HorizontalScrollView
         android:minWidth="25px"
         android:minHeight="25px"
         android:layout_width="match_parent"
-        android:layout_height="411.4dp"
-        android:id="@+id/actionBox" />
-    <LinearLayout
-        android:orientation="horizontal"
-        android:minWidth="25px"
-        android:minHeight="25px"
-        android:layout_width="wrap_content"
-        android:layout_height="100dp"
+        android:layout_height="wrap_content"
         android:id="@+id/imageBox">
-        <ImageView
-            android:src="@drawable/beer"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:id="@+id/beer" />
-        <ImageView
-            android:src="@drawable/cola"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:id="@+id/cola"
-            android:adjustViewBounds="false" />
-        <ImageView
-            android:src="@drawable/whisky"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:id="@+id/whisky"
-            android:adjustViewBounds="false" />
-    </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp">
+            <ImageView
+                android:src="@drawable/beer"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/beer" />
+            <ImageView
+                android:src="@drawable/cola"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/cola"
+                android:adjustViewBounds="false" />
+            <ImageView
+                android:src="@drawable/whisky"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/whisky"
+                android:adjustViewBounds="false" />
+        </LinearLayout>
+    </HorizontalScrollView>
 </LinearLayout>
