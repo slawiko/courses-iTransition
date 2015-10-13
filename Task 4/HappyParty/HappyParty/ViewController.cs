@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Collections.Generic;
 using UIKit;
 
 namespace HappyParty
@@ -13,26 +13,25 @@ namespace HappyParty
 		public override void ViewDidLoad ()
 		{
 			base.ViewDidLoad ();
-			// Perform any additional setup after loading the view, typically from a nib.
 
-			nfloat scrollViewHeight = 100;
-
-			UIImageView imageView = new UIImageView{
-				Frame = new CoreGraphics.CGRect(View.Bounds.Top, View.Bounds.Top, View.Bounds.Width, View.Bounds.Height - scrollViewHeight)
-			};
-
-			UIScrollView scrollView = new UIScrollView {
-				Frame = new CoreGraphics.CGRect (View.Bounds.Top, View.Bounds.Bottom - scrollViewHeight, View.Bounds.Width, scrollViewHeight)
-			};
-
-			View.AddSubview (scrollView);
-			View.AddSubview (imageView);
+			this.InitialViewCreation ();
 		}
 
 		public override void DidReceiveMemoryWarning ()
 		{
 			base.DidReceiveMemoryWarning ();
-			// Release any cached data, images, etc that aren't in use.
+		}
+
+		private void InitialViewCreation() 
+		{
+			ImageScrollView imageScrollView = new ImageScrollView(View);
+
+			UIImageView imageView = new UIImageView{
+				Frame = new CoreGraphics.CGRect(View.Bounds.Top, View.Bounds.Top, View.Bounds.Width, View.Bounds.Height - imageScrollView.Height),
+				BackgroundColor = new UIColor(0, 255, 0, 1)
+			};
+
+			View.AddSubview (imageView);
 		}
 	}
 }
