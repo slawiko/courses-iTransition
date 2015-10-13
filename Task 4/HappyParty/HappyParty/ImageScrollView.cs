@@ -46,7 +46,6 @@ namespace HappyParty
 					Image = Images[i]
 				});
 			}
-
 			this.scrollView.ContentSize = new CoreGraphics.CGSize (ImageSize.Width * Images.Capacity,
 				this.Height);
 		}
