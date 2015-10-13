@@ -93,12 +93,8 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
-    <Folder Include="Resources\Images\" />
-  </ItemGroup>
-  <ItemGroup>
-    <BundleResource Include="Resources\Images\black_square.jpg" />
-    <BundleResource Include="Resources\Images\green.jpg" />
-    <BundleResource Include="Resources\Images\red.jpeg" />
-    <BundleResource Include="Resources\Images\yellow.png" />
+    <BundleResource Include="Resources\Images\beer.png" />
+    <BundleResource Include="Resources\Images\background%402x~iphone.png" />
+    <BundleResource Include="Resources\Images\background2%402x~iphone.jpg" />
   </ItemGroup>
 </Project>

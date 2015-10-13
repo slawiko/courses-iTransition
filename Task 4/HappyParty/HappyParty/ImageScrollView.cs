@@ -17,9 +17,26 @@ namespace HappyParty
 			this.Width = View.Bounds.Width;
 			this.scrollView = new UIScrollView {
 				Frame = new CoreGraphics.CGRect (View.Bounds.Top, View.Bounds.Bottom - this.Height, View.Bounds.Width, this.Height),
-				BackgroundColor = new UIColor(0, 0, 255, 1)
+				BackgroundColor = new UIColor(0, 0, 255, 0)
 			};
 			this.ImageSize = new CoreGraphics.CGSize(100.0f, 100.0f);
+
+			this.Blur (View);
+			View.AddSubview (this.scrollView);
+		}
+
+		public ImageScrollView (UIView View, bool isBlur)
+		{
+			this.Height = 100.0f;
+			this.Width = View.Bounds.Width;
+			this.scrollView = new UIScrollView {
+				Frame = new CoreGraphics.CGRect (View.Bounds.Top, View.Bounds.Bottom - this.Height, View.Bounds.Width, this.Height),
+				BackgroundColor = new UIColor(0, 0, 255, 0)
+			};
+			this.ImageSize = new CoreGraphics.CGSize(100.0f, 100.0f);
+
+			if (isBlur)
+				this.Blur (View);
 
 			View.AddSubview (this.scrollView);
 		}
@@ -46,8 +63,17 @@ namespace HappyParty
 					Image = Images[i]
 				});
 			}
-			this.scrollView.ContentSize = new CoreGraphics.CGSize (ImageSize.Width * Images.Capacity,
+			this.scrollView.ContentSize = new CoreGraphics.CGSize (ImageSize.Width * Images.Count,
 				this.Height);
+		}
+
+		private void Blur(UIView View)
+		{
+			UIVisualEffectView blurView = new UIVisualEffectView (UIBlurEffect.FromStyle (UIBlurEffectStyle.Light)) {
+				Frame = new CoreGraphics.CGRect (View.Bounds.Top, View.Bounds.Bottom - this.Height, View.Bounds.Width, this.Height)
+			};
+
+			View.Add (blurView);
 		}
 	}
 }
