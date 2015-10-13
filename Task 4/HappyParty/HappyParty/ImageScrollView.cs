@@ -39,7 +39,7 @@ namespace HappyParty
 
 		public void AddImages (List<UIImage> Images)
 		{
-			for (int i = 0; i < Images.Capacity; i++)
+			for (int i = 0; i < Images.Count; i++)
 			{
 				this.scrollView.AddSubview(new UIImageView{
 					Frame = new CoreGraphics.CGRect(this.ImageSize.Width * i, 0, this.ImageSize.Width, this.ImageSize.Height),
