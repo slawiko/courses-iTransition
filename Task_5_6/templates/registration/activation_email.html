@@ -1,0 +1,12 @@
+{% load i18n %}
+{% trans "Activate account at" %} {{ site.name }}:
+
+<p>Hello there!
+
+<p>Click the link below to activate your account.
+
+<a href="http://127.0.0.1:8000/accounts/activate/{{ activation_key }}">Link</a>
+
+
+<p>{% blocktrans %}The above link is valid for {{ expiration_days }} days.{% endblocktrans %}
+
