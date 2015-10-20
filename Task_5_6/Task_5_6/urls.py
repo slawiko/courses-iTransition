@@ -17,5 +17,9 @@ from django.conf.urls import include, url
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^admin/', include(admin.site.urls)),
+	url(r'^admin/', include(admin.site.urls)),
+	url(r'^$', 'app.views.home', name = 'home'),
+	url(r'^about/', 'app.views.about', name = 'about'),
+	url(r'^accounts/', include('registration.backends.default.urls')),
+	url(r'^accounts/profile', 'app.views.profile', name = 'profile'),
 ]
