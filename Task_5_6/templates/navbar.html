@@ -15,14 +15,15 @@
                        aria-expanded="false">{{ user }}<span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="{% url 'profile' %}">View profile</a></li>
-                        <li><a href="/admin">Enter admin room</a></li>
+                        {% if request.user.is_superuser %}<li><a href="{% url 'admin:index' %}">Enter admin room</a></li>{% endif %}
                         <li role="separator" class="divider"></li>
+                        <li class="dropdown-header">Account settings</li>
+                        <li><a href="{% url 'settings' %}">Settings</a></li>
                         <li><a href="{% url 'auth_logout' %}">Sign out</a></li>
                     </ul>
                 </li>
                 {% else %}
                 <li><a href="{% url 'registration_register' %}">Sign up</a></li>
-                <li>|</li>
                 <li><a href="{% url 'auth_login' %}">Sign in</a></li>
                 {% endif %}
             </ul>

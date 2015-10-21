@@ -18,8 +18,9 @@ from django.contrib import admin
 
 urlpatterns = [
 	url(r'^$', 'app.views.home', name = 'home'),
-	url(r'^about/', 'app.views.about', name = 'about'),
+	url(r'^about/$', 'app.views.about', name = 'about'),
 	url(r'^admin/', include(admin.site.urls)),
 	url(r'^accounts/', include('registration.backends.default.urls')),
-	url(r'^accounts/profile', 'app.views.profile', name = 'profile'),
+	url(r'^accounts/profile/$', 'app.views.profile', name = 'profile'),
+	url(r'^accounts/profile/settings/$', 'app.views.settings', name = 'settings'),
 ]

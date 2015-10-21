@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.db import models
 
 
 def home(request):
@@ -18,3 +19,10 @@ def profile(request):
 
 	}
 	return render(request, 'profile.html', context)
+
+
+def settings(request):
+	context = {
+
+	}
+	return render(request, 'settings.html', context)
